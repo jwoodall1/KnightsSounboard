@@ -1,0 +1,33 @@
+{
+  "name": "knights-soundboard",
+  "version": "1.0.0",
+  "description": "A modern web-based soundboard application with two sections and persistent storage",
+  "main": "source/index.html",
+  "scripts": {
+    "start": "npx http-server source -p 3000 -o",
+    "dev": "npx live-server source --port=3000 --open=/index.html",
+    "build": "echo 'No build process needed - pure HTML/CSS/JS'",
+    "serve": "npx http-server source -p 8080"
+  },
+  "keywords": [
+    "soundboard",
+    "audio",
+    "web-app",
+    "javascript",
+    "html5"
+  ],
+  "author": "Knights Soundboard",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "live-server": "^1.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "homepage": "."
+}

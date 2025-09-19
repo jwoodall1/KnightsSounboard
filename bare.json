@@ -1,0 +1,20 @@
+{
+    "sections": {
+      "section1": {
+        "buttons": [],
+        "maxButtons": 20
+      },
+      "section2": {
+        "buttons": [],
+        "maxButtons": 100
+      }
+    },
+    "teamLogo": null,
+    "teamColors": {
+      "primary": "#667eea",
+      "secondary": "#764ba2", 
+      "accent": "#4CAF50"
+    },
+    "timestamp": "2024-01-01T00:00:00.000Z",
+    "version": "1.1"
+  }

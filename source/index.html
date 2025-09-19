@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knights Soundboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <div class="logo-section">
+                    <img src="../Carleton_Knights_logo.png" alt="Carleton Knights Logo" class="team-logo">
+                    <h1>Knights Soundboard</h1>
+                </div>
+                <div class="controls">
+                    <button id="saveBtn" class="save-btn">💾 Save Project</button>
+                    <button id="loadBtn" class="load-btn">📁 Load Project</button>
+                    <button id="resetBtn" class="reset-btn">🔄 Reset All</button>
+                </div>
+            </div>
+        </header>
+
+        <div class="soundboard-container">
+            <!-- Left Column - 3 Sections -->
+            <div class="left-column">
+                <!-- Downs Section -->
+                <div class="section" id="section1">
+                    <div class="section-header">
+                        <h2>Downs</h2>
+                        <div class="section-controls">
+                            <span class="button-count">Buttons: <span id="count1">4</span></span>
+                        </div>
+                    </div>
+                    <div class="button-grid" id="buttonGrid1">
+                        <!-- 4 Down buttons will be added here -->
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div class="section" id="section2">
+                    <div class="section-header">
+                        <h2>Team</h2>
+                        <div class="section-controls">
+                            <span class="button-count">Buttons: <span id="count2">4</span></span>
+                        </div>
+                    </div>
+                    <div class="button-grid" id="buttonGrid2">
+                        <!-- 4 Team buttons will be added here -->
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Column - Players Section -->
+            <div class="right-column">
+                <!-- Players Section -->
+                <div class="section" id="section4">
+                    <div class="section-header">
+                        <h2>Players</h2>
+                        <div class="section-controls">
+                            <span class="button-count">Buttons: <span id="count4">100</span></span>
+                        </div>
+                    </div>
+                    <div class="button-grid" id="buttonGrid4">
+                        <!-- Player buttons 0-99 will be added here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Miscellaneous Section -->
+        <div class="section" id="section3">
+            <div class="section-header">
+                <h2>Miscellaneous</h2>
+                <div class="section-controls">
+                    <span class="button-count">Buttons: <span id="count3">50</span></span>
+                </div>
+            </div>
+            <div class="button-grid" id="buttonGrid3">
+                <!-- 50 Miscellaneous buttons will be added here -->
+            </div>
+        </div>
+
+        <!-- Music Playlist Section -->
+        <div class="playlist-section">
+            <h2>Playlist</h2>
+            <div class="playlist-container">
+                <iframe allow="autoplay *; encrypted-media *;" frameborder="0" height="450" style="width:100%;max-width:660px;overflow:hidden;background:transparent;" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/us/playlist/football-rahhhhhh/pl.u-EdAVz5WsD5k0W56"></iframe>
+            </div>
+        </div>
+
+        <!-- Hidden file inputs -->
+        <input type="file" id="fileInput" accept="audio/*" style="display: none;" multiple>
+        <input type="file" id="projectInput" accept=".json" style="display: none;">
+    </div>
+
+    <!-- Floating Control Button -->
+    <div id="floatingControlBtn" class="floating-control-btn">
+        <button id="floatingControlButton" class="floating-control-button">
+            <span id="floatingControlIcon">⏸️</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
